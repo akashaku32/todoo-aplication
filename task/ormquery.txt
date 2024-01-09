@@ -1,0 +1,46 @@
+from task.models import Todos
+
+#create orm query
+
+ModelsName.objects.create(field_name=value)
+
+Todopython manage.pys.object.create(title="water bill",user="merry")
+
+#fetch all 45
+
+select* from Todos
+queryset
+qs=ModelsName.objects.all()
+qs=Todos.objects.all()qs
+
+#query for filter record
+
+fetch all todos inserted by hari
+Todos.objects.filter(user="hari")
+
+fetch allpending todos inserted by user vijay
+qs=Todos.objects.filter(user="vijay",status=False)
+
+
+fetch todo with id
+qs=Todos.objects.filter(id=2)
+
+orm query for updating a record
+Todos.objects.filter(id=1).update(status=True)
+
+===lookup==
+qs=Todos.objects.filter(id__in=[2,3,6]).update(status=True)
+
+fetch all records whose id in range of (2,6)
+qs=Todos.objects.filter(id__gte=2,id__lte=6)
+
+qs=Todos.objects.filter(title__in=["medicine","emi"])
+qs=Todos.objects.filter(user__in=["merry","anuja"])
+
+
+
+books.object.create(title="water bill",user="merry")
+
+
+#exclude method
+Todos.objects.all().exclude(category="novel")
